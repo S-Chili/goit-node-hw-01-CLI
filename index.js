@@ -24,7 +24,7 @@ if (list) {
 function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case 'list':
-      contacts.listContacts().then((data) => console.log(data));
+      contacts.listContacts().then((data) => console.table(data));
       break;
 
     case 'get':
